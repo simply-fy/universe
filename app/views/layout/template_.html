@@ -1,11 +1,14 @@
-﻿<div class="row" id="header">
-    <div class="d-flex justify-content-center p-5">
+﻿<div class="row">
+    <div class="col-sm-12">
+        <p></p>
     </div>
 </div>
 
-<div class="row" id="body">
-    <div class="row" id="topMenu">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+<div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-10">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#/home"><span style="font-size: 1em;"><i class="fa fa-ravelry"></i> Universe</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,20 +49,43 @@
             </div>
         </nav>
     </div>
-    <div class="col-sm-2 navbar navbar-lg navbar-dark bg-dark" id="sideMenu">
-        
+</div>
+
+<div class="row">
+
+    <div class="col-sm-4">
+    </div>
+
+    <div class="col-sm-8">
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="navbar navbar-expand-lg navbar-dark col-sm-2 ">        
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Log In
+            </button>
+    </div>
     <div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"
+            <li class="nav-item" 
                 ng-repeat="page in content">
-    
-                <a class="nav-link"
+                
+                <a class="nav-link" 
                    ng-click="setPage(page)">{{page.name}} Content</a>
             </li>
         </ul>
     </div>
+
+    <div class="collapse navbar-collapse col-sm-2" id="collapseExample">
+        <div class="card accordion-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+    </div>
+
     
-    <div class="bg-light">
+    <div class="bg-light col-sm-10">
         <div ng-switch on="currentContent.name">
             <div ng-switch-when="red" class="red">{{currentContent.content}}</div>
             <div ng-switch-when="blue" class="blue">{{currentContent.content}}</div>
@@ -67,37 +93,13 @@
             <div ng-switch-default>No Content!</div>
         </div>
     </div>
-    
-    <div class="navbar navbar-expand-lg navbar-dark">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Log In
-        </button>
-    </div>
-
-    </div>
-    <div class="col-sm-10 card-body" id="content">
-        <p>
-            This is body
-
-            <span class="placeholder col-12 bg-primary"></span>
-            <div class="collapse" id="collapseExample">
-                <div class="card accordion-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-            </div>
-            <span class="placeholder col-12 bg-secondary"></span>
-            <span class="placeholder col-12 bg-success"></span>
-            <span class="placeholder col-12 bg-danger"></span>
-            <span class="placeholder col-12 bg-warning"></span>
-            <span class="placeholder col-12 bg-info"></span>
-            <span class="placeholder col-12 bg-light"></span>
-            <span class="placeholder col-12 bg-dark"></span>
-        </p>
-    </div>
 </div>
 
-<div class="row" id="footer">
-    <div class="d-flex flex-row-reverse">
-        <i class="fa fa-copyright"> Universe 2021</i>
+<div class="row">
+    <div class="col-sm-2">
+        <p></p>
+    </div>
+    <div class="col-sm-10">
+        <i class="fa fa-copyright" aria-hidden="true"> 2021 - Universe</i>
     </div>
 </div>

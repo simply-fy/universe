@@ -9,6 +9,8 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: "app/views/layout/template.html",
             controller: "homeController"
         })
+
+        
         .otherwise({
             redirectTo: "/home"
         });
