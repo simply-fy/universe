@@ -200,12 +200,7 @@
     <Content Include="app\DataService.js" />
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\home\homeDirective.js" />
-    <Content Include="app\views\layout\sidebar.css" />
-    <Content Include="app\views\layout\sidebar.html" />
-    <Content Include="app\views\layout\sidebar.js" />
-    <Content Include="app\views\layout\sidebar.min.css" />
     <Content Include="app\views\layout\template.html" />
-    <Content Include="app\views\layout\template_.html" />
     <Content Include="Content\all.css" />
     <Content Include="Content\all.min.css" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -272,7 +267,6 @@
     <Content Include="Scripts\fontawesome\solid.min.js" />
     <Content Include="Scripts\fontawesome\v4-shims.js" />
     <Content Include="Scripts\fontawesome\v4-shims.min.js" />
-    <Content Include="app\views\layout\sidebar.less" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
