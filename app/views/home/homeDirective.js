@@ -1,5 +1,5 @@
 ﻿
-app.directive('homeDirective',
+appModule.directive('homeDirective',
     function () {
         return {
             restrict: 'E',

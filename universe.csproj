@@ -197,6 +197,8 @@
     <Content Include="app\DataService.js" />
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\home\homeDirective.js" />
+    <Content Include="app\views\layout\sidebar.html" />
+    <Content Include="app\views\layout\sidebar.js" />
     <Content Include="app\views\layout\template.html" />
     <Content Include="Content\all.css" />
     <Content Include="Content\all.min.css" />
