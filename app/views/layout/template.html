@@ -1,126 +1,24 @@
-﻿<div class="row" id="header">
+﻿<div class="row col-sm-12" id="header">
     <div class="d-flex justify-content-center p-5">
-        <div data-ng-include="app/views/layout/header.html">
-        </div>
+        <div ng-include="'app/views/layout/header.html'" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12" id="topbar">
+        <div ng-include="'app/views/layout/topbar.html'" />
+    </div>
+</div>
+<div class="row" style="min-height:500px;">
+    <div class="col-sm-2" id="sidemenu">
+        <div ng-include="'app/views/layout/sidebar.html'" />
+
+    </div>
+    <div class="col-sm-10" id="content">
     </div>
 </div>
 
-<div class="row" id="body">
-    <div class="row" id="topMenu">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
-            <div class="container">
-                <a class="navbar-brand" href="#/home"><span style="font-size: 1em;"><i class="fa fa-ravelry"></i> Universe</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/test/mclog/"><i class="fa fa-cubes" aria-hidden="true"></i> MC log</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-list" aria-hidden="true"></i> Applications
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/phpmyadmin/">phpmyadmin</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/test/wwwsql/">WWW SQL</a></li>
-                            </ul>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-list" aria-hidden="true"></i> My Test Pages
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/test/rtvservice/">rtvservice</a></li>
-                                <li><a class="dropdown-item" href="app/Home.html">New Employee Form</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <div class="col-sm-2 navbar navbar-lg navbar-dark bg-dark" id="sideMenu">
-
-        <!--<div>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"
-                ng-repeat="page in content">
-
-                <a class="nav-link"
-                   ng-click="setPage(page)">{{page.name}} Content</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="bg-light">
-        <div ng-switch on="currentContent.name">
-            <div ng-switch-when="red" class="red">{{currentContent.content}}</div>
-            <div ng-switch-when="blue" class="blue">{{currentContent.content}}</div>
-            <div ng-switch-when="green" class="green">{{currentContent.content}}</div>
-            <div ng-switch-default>No Content!</div>
-        </div>
-    </div>-->
-
-        <div class="navbar navbar-expand-lg navbar-dark">
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Log In
-            </button>
-        </div>
-
-        <div class="collapse" id="collapseExample">
-            <div class="card accordion-body">
-                <form class="login-form" action="/Account/Login?returnUrl=/" method="post" novalidate="novalidate">
-                    <input type="hidden" name="returnUrlHash" value />
-                    <div class="form-group">
-                        <label class="control-label visible-ie8 visible-ie9">Naudotojo vardas arba el.pašto adresas</label>
-                        <input class="form-control form-control-solid placeholder-no-fix input-ltr" type="text" autocomplete="off" placeholder="Naudotojo vardas arba el. pašto adresas" name="usernameOrEmailAddress" required aria-required="true" />
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label visible-ie8 visible-ie9">Slaptažodis</label>
-                        <input class="form-control form-control-solid placeholder-no-fix input-ltr" type="password" autocomplete="off" placeholder="Slaptažodis" name="password" />
-                    </div>
-                    <div class="form-action">
-                        <button type="submit" class="btn btn-success uppercase">Prisijungti</button>
-                        <label class="rememberme check">
-                            <input type="checkbox" name="rememberMe" value="true" />
-                            " Įsiminti "
-                        </label>
-                        <a href="/Account/ForgotPassword" id="forgot-password" class="forget-password">Pamiršote slaptažodį?</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-
-    </div>
-    <div class="col-sm-10 card-body" id="content">
-        <p>
-            This is body
-
-            <span class="placeholder col-12 bg-primary"></span>
-            <span class="placeholder col-12 bg-secondary"></span>
-            <span class="placeholder col-12 bg-success"></span>
-            <span class="placeholder col-12 bg-danger"></span>
-            <span class="placeholder col-12 bg-warning"></span>
-            <span class="placeholder col-12 bg-info"></span>
-            <span class="placeholder col-12 bg-light"></span>
-            <span class="placeholder col-12 bg-dark"></span>
-        </p>
-    </div>
-</div>
-
-<div class="row" id="footer">
+<div class="row p-3 col-sm-12" id="footer">
     <div class="d-flex flex-row-reverse">
-        <i class="fa fa-copyright"> Universe 2021</i>
+        <div ng-include="'app/views/layout/footer.html'" />
     </div>
 </div>

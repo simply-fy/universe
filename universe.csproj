@@ -197,11 +197,13 @@
     <Content Include="app\DataService.js" />
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\home\homeDirective.js" />
+    <Content Include="app\views\layout\footer.html" />
     <Content Include="app\views\layout\header.html" />
     <Content Include="app\views\layout\sidebar.css" />
     <Content Include="app\views\layout\sidebar.html" />
     <Content Include="app\views\layout\sidebar.js" />
     <Content Include="app\views\layout\template.html" />
+    <Content Include="app\views\layout\topbar.html" />
     <Content Include="Content\all.css" />
     <Content Include="Content\all.min.css" />
     <Content Include="Content\bootstrap-grid.css" />
