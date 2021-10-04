@@ -1,12 +1,21 @@
 ﻿app.controller('homeController',
     function ($scope, $location, DataService) {
 
-        $scope.showCreateEmployeeForm = function () {
-            $location.path('/newEmployeeForm');
-        };
+        $scope.content = [{
+            name: "red",
+            content: "This is the red content"
+        }, {
+            name: "blue",
+            content: "This is the blue content"
+        }, {
+            name: "green",
+            content: "This is the green content"
+        }];
 
-        $scope.showUpdateEmployeeForm = function (id) {
-            $location.path('/updateEmployeeForm/' + id)
+        $scope.currentContent = $scope.content[0];
+
+        $scope.setPage = function (page) {
+            $scope.currentContent = page;
         };
     });
 

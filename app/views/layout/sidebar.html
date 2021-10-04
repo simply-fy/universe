@@ -1,0 +1,52 @@
+﻿<div class="navbar navbar-lg navbar-dark bg-dark" id="sideMenu">
+
+    <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"
+                ng-repeat="page in content">
+                <a class="nav-link"
+                   ng-click="setPage(page)">{{page.name}} Content</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-light">
+        <div ng-switch on="currentContent.name">
+            <div ng-switch-when="red" class="red">{{currentContent.content}}</div>
+            <div ng-switch-when="blue" class="blue">{{currentContent.content}}</div>
+            <div ng-switch-when="green" class="green">{{currentContent.content}}</div>
+            <div ng-switch-default>No Content!</div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-expand-lg navbar-dark">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Log In
+        </button>
+    </div>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card accordion-body">
+            <form class="login-form" action="/Account/Login?returnUrl=/" method="post" novalidate="novalidate">
+                <input type="hidden" name="returnUrlHash" value />
+                <div class="form-group">
+                    <label class="control-label visible-ie8 visible-ie9">Naudotojo vardas arba el.pašto adresas</label>
+                    <input class="form-control form-control-solid placeholder-no-fix input-ltr" type="text" autocomplete="off" placeholder="Naudotojo vardas arba el. pašto adresas" name="usernameOrEmailAddress" required aria-required="true" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label visible-ie8 visible-ie9">Slaptažodis</label>
+                    <input class="form-control form-control-solid placeholder-no-fix input-ltr" type="password" autocomplete="off" placeholder="Slaptažodis" name="password" />
+                </div>
+                <div class="form-action">
+                    <button type="submit" class="btn btn-success uppercase">Prisijungti</button>
+                    <label class="rememberme check">
+                        <input type="checkbox" name="rememberMe" value="true" />
+                        " Įsiminti "
+                    </label>
+                    <a href="/Account/ForgotPassword" id="forgot-password" class="forget-password">Pamiršote slaptažodį?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
