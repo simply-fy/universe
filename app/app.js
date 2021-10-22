@@ -10,7 +10,11 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: "homeController"
         })
 
-        
+        .when("/tutorial", {
+            templateUrl: "app/views/tutorial/tutorial.html",
+            controller: "tutorialController"
+        })
+
         .otherwise({
             redirectTo: "/home"
         });
