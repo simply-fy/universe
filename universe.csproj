@@ -204,6 +204,7 @@
     <Content Include="app\views\layout\sidebar.js" />
     <Content Include="app\views\layout\template.html" />
     <Content Include="app\views\layout\topbar.html" />
+    <Content Include="app\views\layout\univese.png" />
     <Content Include="app\views\tutorial\tutorial.html" />
     <Content Include="app\views\tutorial\tutorialController.js" />
     <Content Include="Content\all.css" />
