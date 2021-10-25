@@ -15,6 +15,11 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: "tutorialController"
         })
 
+        .when("/login", {
+            templateUrl: "app/views/layout/login.html",
+            controller: "homeController"
+        })
+
         .otherwise({
             redirectTo: "/home"
         });
