@@ -197,12 +197,17 @@
     <Content Include="app\DataService.js" />
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\home\homeDirective.js" />
+    <Content Include="app\views\layout\css\styles.css" />
     <Content Include="app\views\layout\footer.html" />
     <Content Include="app\views\layout\header.html" />
+    <Content Include="app\views\layout\js\datatables-simple-demo.js" />
+    <Content Include="app\views\layout\js\scripts.js" />
     <Content Include="app\views\layout\sidebar.css" />
     <Content Include="app\views\layout\sidebar.html" />
     <Content Include="app\views\layout\sidebar.js" />
+    <Content Include="app\views\layout\styles.css" />
     <Content Include="app\views\layout\template.html" />
+    <Content Include="app\views\layout\template2.html" />
     <Content Include="app\views\layout\topbar.html" />
     <Content Include="app\views\layout\univese.png" />
     <Content Include="app\views\tutorial\tutorial.html" />
