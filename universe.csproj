@@ -202,6 +202,7 @@
     <Content Include="app\views\layout\header.html" />
     <Content Include="app\views\layout\js\datatables-simple-demo.js" />
     <Content Include="app\views\layout\js\scripts.js" />
+    <Content Include="app\views\layout\login.html" />
     <Content Include="app\views\layout\sidebar.css" />
     <Content Include="app\views\layout\sidebar.html" />
     <Content Include="app\views\layout\sidebar.js" />
