@@ -7,7 +7,8 @@ app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
             url: "/",
-            templateUrl: "./app/views/layout/template2.html"
+            templateUrl: "./app/views/layout/template2.html",
+            controller: "views.home.index"
         })
 
         .when("/tables", {

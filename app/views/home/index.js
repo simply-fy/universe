@@ -1,12 +1,12 @@
 ﻿(function () {
-    app.controller('views.home.index', [
+    app.controller('views.layout.index', [
         '$scope',
         function ($scope) {
             var vm = this;
 
 
-            window.addEventListener('DOMContentLoaded', event => {
-
+            window.addEventListener('click', event => {
+                console.log('button press');
                 // Toggle the side navigation
                 const sidebarToggle = document.div.querySelector('#sidebarToggle');
                 if (sidebarToggle) {
